@@ -1,0 +1,41 @@
+body {
+    background: orange;
+  }
+  h1 {text-align: center;}
+  
+  .grid {display: grid;
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: minmax(100px, auto) repeat(5, 85px);
+  justify-content: center;}
+  
+  
+  .grid button {
+    border: 2px solid white;
+    font-size: 2rem;
+    background-color: bisque;
+    cursor: pointer;
+  }
+  
+  .grid button:hover {background-color: aliceblue;
+  transition: 0.35s ease;}
+  
+  .all-clear, .equals {grid-column: span 2;}
+  
+  .output {grid-column: 1/-1;
+  background-color: black;
+  opacity: 80%;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  flex-direction: column;
+  padding: 15px;}
+  
+  .output .previous-op {
+  font-size: 1.5em;
+  color: lightgray;}
+  
+  .output .current-op {
+    font-size: 2.5em;
+  color: white;}
+  
