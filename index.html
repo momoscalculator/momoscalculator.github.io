@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <h1>Calculator Time </h1>
+  
+    <div class="grid">
+      <div class="output">
+       
+      <div class="previous-op"></div>
+      <div class="signop"></div>
+      <div class="current-op"></div>
+      </div>
+    <button onclick="clearing()"  class="all-clear">AC</button>
+    <button onclick="del()" class="delete">DEL</button>
+    <button onclick="signfunc(_divide)" class="operator">÷</button>
+    <button onclick="num(seven)" class="number">7</button>
+    <button onclick="num(eight)" class="number">8</button>
+    <button onclick="num(nine)" class="number">9</button>
+    <button onclick="signfunc(_multiply)" class="operator">x</button>
+    <button onclick="num(four)" class="number">4</button>
+    <button onclick="num(five)" class="number">5</button>
+    <button onclick="num(six)" class="number">6</button>
+    <button onclick="signfunc(_subtract)" class="operator">-</button>
+    <button onclick="num(one)" class="number">1</button>
+    <button onclick="num(two)" class="number">2</button>
+    <button onclick="num(three)" class="number">3</button>
+    <button onclick="signfunc(_add)" class="operator">+</button>
+    <button onclick="dec(decimal)" class="number">.</button>
+    <button onclick="zerofunc(zero)" class="number">0</button>
+    <button onclick="equals()" class="equals"> =</button>
+  </div>
+
+
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
