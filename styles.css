@@ -1,4 +1,6 @@
 
+* {overflow:visible;}
+
 body {margin: 1vw;
   padding: 1vw;
     background: orange;
@@ -61,7 +63,10 @@ body {margin: 1vw;
   @media screen and (max-width: 669px) {
 
 
-
+    .grid {display: grid;
+      grid-template-columns: repeat(4, 17vw);
+      grid-template-rows: minmax(100px, auto) repeat(5, 17vw);
+      justify-content: center;}
 
 .grid button {
   border: 2px solid white;
